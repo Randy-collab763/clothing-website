@@ -45,7 +45,7 @@ nav a:hover {
   background: url('images/hero-bg.jpg') center/cover no-repeat;
   text-align: center;
   color: white;
-  padding: 120px 20px;
+  padding: 80px 20px;
 }
 
 .hero h2 {
@@ -92,7 +92,26 @@ nav a:hover {
 
 .product-card img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
 }
 
 footer {
