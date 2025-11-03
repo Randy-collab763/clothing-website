@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Randy's Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header/Nav -->
+  <header>
+    <h1 class="logo">Randy's Clothing</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Content -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out with any questions, orders, or feedback.</p>
+
+    <ul>
+      <li>Email: <a href="mailto:info@randysclothing.com">info@randysclothing.com</a></li>
+      <li>Phone: +233 24 000 0000</li>
+      <li>Address: Accra, Ghana</li>
+    </ul>
+
+    <h3>Send us a message:</h3>
+    <form action="#" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Randy's Clothing | Designed by Randy</p>
+  </footer>
+
+  <!-- Mobile menu JS -->
+  <script>
+    const menu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    menu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
