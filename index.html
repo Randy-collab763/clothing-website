@@ -8,16 +8,22 @@
 </head>
 <body>
   <header>
-    <h1 class="logo">Randy's Clothing</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1 class="logo">Randy's Clothing</h1>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="shop.html" class="nav-link">Shop</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+
 
   <section class="hero">
     <h2>Imported Lacoste Tees & Authentic African Wear</h2>
@@ -44,5 +50,14 @@
   <footer>
     <p>© 2025 Randy's Clothing | Designed by Randy</p>
   </footer>
+  <script>
+const menu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+menu.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+
 </body>
 </html>
